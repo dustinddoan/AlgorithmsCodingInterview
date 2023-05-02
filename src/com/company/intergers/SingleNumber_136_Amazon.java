@@ -1,10 +1,5 @@
 package com.company.intergers;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 /*
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
@@ -27,7 +22,7 @@ Output: 1
  */
 
 // brute force solution approach
-public class SingleNumber136Amazon {
+public class SingleNumber_136_Amazon {
   public static void main(String[] args) {
     int[] nums = {4,4,2,1,2};
     int ans = singleNumber(nums);
