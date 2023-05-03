@@ -40,8 +40,10 @@ public class Powxn_50_Amazon {
 
   private static double myPow(int x, int n) {
     double ans = 1.0;
-    long num = n;
-    if (n < 0) num = -1 * num;
+//    long num = n;
+    int num = n;
+    if (n < 0) num = -1 * num; // convert to positive number
+    System.out.println("num: " + num);
     while (num > 0) {
       if (num % 2 == 0) {
         x = x*x;
@@ -52,6 +54,8 @@ public class Powxn_50_Amazon {
       }
     }
 
+    System.out.println("ans: " + ans);
+    // if n < 0; reverse the ans
     if (n < 0) {
       return 1.0/ans;
     }
